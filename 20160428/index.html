@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , minimum-scale=1,maximum-scale=1">
+	<title>星座运势2016</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/componentBase.js"></script>
+	<script type="text/javascript" src="./js/componentBar.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var val = new MainCon();
+			val.addPage('face','page1')
+					.addComponent('picture',{
+
+					})
+				.addPage('list','page2')
+
+				.addPage('star','page3')
+
+				.addPage('end','page4')
+
+	/*			.loader();*/
+			$('#main_star').fullpage();
+		})
+
+	</script>
+</body>
+</html>
